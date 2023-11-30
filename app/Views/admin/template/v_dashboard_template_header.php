@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title><?= $judul ?></title>
+        <link href="<?= base_url('assets') ?>/admin/css/styles.css" rel="stylesheet" />
+        <link href="<?= base_url('assets') ?>/admin/css/datatable.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="<?= base_url('assets') ?>/ckeditor/ckeditor.js"></script>
+        <script src="<?= base_url('assets') ?>/summernote/summernote.min.js"></script>
+        <link href="<?= base_url('assets') ?>/summernote/summernote.min.css" rel="stylesheet"></link>
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>

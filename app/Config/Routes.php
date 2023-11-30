@@ -17,10 +17,10 @@ if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+// $routes->setDefaultController('Home');`
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
-$routes->set404Override();
+// $routes->set404Override();
 $routes->setAutoRoute(true);
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
 // where controller filters or CSRF protection are bypassed.
@@ -36,13 +36,46 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'User\LandingPage');
+$routes->get('/berita', 'User\Berita');
+$routes->get('/berita/(:segment)', 'User\Berita::detailBerita/$1');
+$routes->get('/sejarah', 'User\ProfileDesa::Sejarah');
+$routes->get('/visi-misi', 'User\ProfileDesa::Visi_Misi');
+$routes->get('/tentang', 'User\ProfileDesa::Deskripsi_Desa');
+$routes->get('/pengaduan', 'User\Pengaduan');
+$routes->post('/pengaduan', 'User\Pengaduan::index');
+$routes->get('/aparatur', 'User\Aparatur');
+$routes->get('/galeri', 'User\Galeri');
 
 $routes->group('admin', function($routes){
-    $routes->add('login', 'Admin\Admin::login');
-    $routes->add('dashboard', 'Admin\Admin::dashboard');
-    $routes->add('logout', 'Admin\Admin::logout');
+    $routes->add('login', 'Admin\Admin::login', ['filter' => 'noauth']);
+    $routes->add('logout', 'Admin\Admin::logout', ['filter' => 'auth']);
+    $routes->add('dashboard', 'Admin\Dashboard', ['filter' => 'auth']);
+    $routes->add('dashboard/visi-misi', 'Admin\ProfileDesa::CRUD_visi_misi', ['filter' => 'auth']);
+    $routes->add('dashboard/profile-desa', 'Admin\ProfileDesa::ProfileDesaIndex', ['filter' => 'auth']);
+    $routes->add('dashboard/sejarah-desa', 'Admin\ProfileDesa::SejarahDesaIndex', ['filter' => 'auth']);
+    $routes->add('dashboard/gambar-utama', 'Admin\ProfileDesa::heroImage', ['filter' => 'auth']);
+    $routes->add('dashboard/kategori', 'Admin\Post::kategoriPost', ['filter' => 'auth']);
+    $routes->add('dashboard/sosmed', 'Admin\Sosmed', ['filter' => 'auth']);
+    $routes->add('dashboard/posts', 'Admin\Post', ['filter' => 'auth']);
+    $routes->add('dashboard/posts/create', 'Admin\Post::tambahPost', ['filter' => 'auth']);
+    $routes->add('dashboard/posts/edit/(:num)', 'Admin\Post::editPost/$1', ['filter' => 'auth']);
+    // $routes->add('dashboard/posts/delete', 'Admin\Post::deletePost', ['filter' => 'auth']);
+    $routes->add('dashboard/pengaduan/', 'Admin\Pengaduan', ['filter' => 'auth']);
+    $routes->add('dashboard/pengaduan/detail/(:num)', 'Admin\Pengaduan::detail/$1', ['filter' => 'auth']);
+    $routes->add('dashboard/agenda/', 'Admin\Agenda', ['filter' => 'auth']);
+    $routes->add('dashboard/agenda/create', 'Admin\Agenda::addAgenda', ['filter' => 'auth']);
+    $routes->add('dashboard/aparatur/', 'Admin\Aparatur', ['filter' => 'auth']);
+    $routes->add('dashboard/aparatur/create', 'Admin\Aparatur::addAparatur', ['filter' => 'auth']);
+    $routes->add('dashboard/aparatur/edit/(:num)', 'Admin\Aparatur::editAparatur/$1', ['filter' => 'auth']);
+    $routes->add('dashboard/galeri/', 'Admin\Galeri', ['filter' => 'auth']);
+    $routes->add('dashboard/galeri/create', 'Admin\Galeri::addGaleri', ['filter' => 'auth']);
+    $routes->add('dashboard/statistik/', 'Admin\Statistik', ['filter' => 'auth']);
+    $routes->add('dashboard/statistik/create', 'Admin\Statistik::addStatistik', ['filter' => 'auth']);
+
 });
+
+
 
 /*
  * --------------------------------------------------------------------

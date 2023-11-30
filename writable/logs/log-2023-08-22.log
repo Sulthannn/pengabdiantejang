@@ -1,0 +1,12 @@
+CRITICAL - 2023-08-22 06:29:06 --> Undefined variable: sejarah
+in APPPATH\Views\user\v_user_visi_misi.php on line 20.
+ 1 APPPATH\Views\user\v_user_visi_misi.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_user_visi_misi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\User\ProfileDesa.php(35): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Visi_Misi()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -39,7 +39,7 @@ class Admin extends BaseController
 
             $username = str_replace("'", "", htmlspecialchars($this->request->getVar('username'), ENT_QUOTES));
             $password = str_replace("'", "", htmlspecialchars($this->request->getVar('password'), ENT_QUOTES));
-            $remember_me = $this->request->getVar('remember_me');
+            // $remember_me = $this->request->getVar('remember_me');
 
             $dataAdmin = $this->m_admin->getData($username);
 
@@ -61,10 +61,6 @@ class Admin extends BaseController
             return redirect()->to('admin/dashboard');
         }
         return view("admin/v_login", $data );
-    }
-
-    function dashboard(){
-        return view("admin/v_dashboard_admin");
     }
  
     function logout(){

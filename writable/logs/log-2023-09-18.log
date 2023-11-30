@@ -1,0 +1,296 @@
+ERROR - 2023-09-18 18:38:20 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(49): App\Models\ProfileDesaModel->getData()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Visi_Misi()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(49): App\Models\ProfileDesaModel->getData()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Visi_Misi()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-18 18:38:20 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+ 5 APPPATH\Controllers\User\ProfileDesa.php(49): App\Models\ProfileDesaModel->getData()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Visi_Misi()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-09-18 19:58:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(75): App\Models\ProfileDesaModel->getData()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(75): App\Models\ProfileDesaModel->getData()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-18 19:58:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+ 5 APPPATH\Controllers\User\ProfileDesa.php(75): App\Models\ProfileDesaModel->getData()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-09-18 19:58:48 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=12592 in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(75): App\Models\ProfileDesaModel->getData()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(75): App\Models\ProfileDesaModel->getData()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(75): App\Models\ProfileDesaModel->getData()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-18 19:58:48 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+ 5 APPPATH\Controllers\User\ProfileDesa.php(75): App\Models\ProfileDesaModel->getData()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-09-18 19:58:56 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(75): App\Models\ProfileDesaModel->getData()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(75): App\Models\ProfileDesaModel->getData()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-18 19:58:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+ 5 APPPATH\Controllers\User\ProfileDesa.php(75): App\Models\ProfileDesaModel->getData()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-09-18 19:59:03 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(75): App\Models\ProfileDesaModel->getData()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(75): App\Models\ProfileDesaModel->getData()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-18 19:59:03 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+ 5 APPPATH\Controllers\User\ProfileDesa.php(75): App\Models\ProfileDesaModel->getData()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 20:14:19 --> Undefined variable: k
+in APPPATH\Views\user\v_user_berita.php on line 41.
+ 1 APPPATH\Views\user\v_user_berita.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_user_berita.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\User\Berita.php(48): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Berita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 20:14:40 --> Undefined variable: k
+in APPPATH\Views\user\v_user_berita.php on line 41.
+ 1 APPPATH\Views\user\v_user_berita.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_user_berita.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\User\Berita.php(48): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Berita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 20:15:33 --> Undefined variable: k
+in APPPATH\Views\user\v_user_berita.php on line 41.
+ 1 APPPATH\Views\user\v_user_berita.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_user_berita.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\User\Berita.php(49): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Berita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-09-18 21:40:08 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\Admin\Pengaduan.php(124): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\Admin\Pengaduan->detail()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-09-18 21:40:08 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-18 21:40:08 --> 

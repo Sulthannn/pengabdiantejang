@@ -1,0 +1,395 @@
+ERROR - 2023-09-14 10:13:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(15): App\Models\ProfileDesaModel->getData()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Sejarah()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(15): App\Models\ProfileDesaModel->getData()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Sejarah()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-14 10:13:57 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+ 5 APPPATH\Controllers\User\ProfileDesa.php(15): App\Models\ProfileDesaModel->getData()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Sejarah()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-09-14 10:14:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(15): App\Models\ProfileDesaModel->getData()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Sejarah()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\ProfileDesa.php(15): App\Models\ProfileDesaModel->getData()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Sejarah()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-14 10:14:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\ProfileDesaModel.php(16): CodeIgniter\Model->__call()
+ 5 APPPATH\Controllers\User\ProfileDesa.php(15): App\Models\ProfileDesaModel->getData()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Sejarah()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 10:26:28 --> Undefined variable: aparatur_dsa
+in APPPATH\Views\user\template\v_user_template_side_bar.php on line 258.
+ 1 APPPATH\Views\user\template\v_user_template_side_bar.php(258): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\user\v_user_deskripsi_desa.php(68): include('APPPATH\\Views\\user\\template\\v_user_template_side_bar.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_user_deskripsi_desa.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\User\ProfileDesa.php(60): view()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 10:31:59 --> Undefined variable: aparatu
+in APPPATH\Views\user\template\v_user_template_side_bar.php on line 265.
+ 1 APPPATH\Views\user\template\v_user_template_side_bar.php(265): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\user\v_user_deskripsi_desa.php(68): include('APPPATH\\Views\\user\\template\\v_user_template_side_bar.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_user_deskripsi_desa.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\User\ProfileDesa.php(60): view()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 10:47:30 --> Undefined index: koordinator_kegiatan
+in APPPATH\Views\user\template\v_user_template_side_bar.php on line 42.
+ 1 APPPATH\Views\user\template\v_user_template_side_bar.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\user\v_user_deskripsi_desa.php(68): include('APPPATH\\Views\\user\\template\\v_user_template_side_bar.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_user_deskripsi_desa.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\User\ProfileDesa.php(63): view()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 10:49:27 --> Undefined variable: agenda_desa_mendatang
+in APPPATH\Views\user\template\v_user_template_side_bar.php on line 24.
+ 1 APPPATH\Views\user\template\v_user_template_side_bar.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\user\v_user_aparatur.php(80): include('APPPATH\\Views\\user\\template\\v_user_template_side_bar.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_user_aparatur.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\User\Aparatur.php(21): view()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Aparatur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 10:49:48 --> Undefined property: App\Controllers\User\Aparatur::$m_agenda
+in APPPATH\Controllers\User\Aparatur.php on line 20.
+ 1 APPPATH\Controllers\User\Aparatur.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Aparatur->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 10:54:58 --> include(template/v_user_template_sosmed): failed to open stream: No such file or directory
+in APPPATH\Views\user\v_user_deskripsi_desa.php on line 22.
+ 1 APPPATH\Views\user\v_user_deskripsi_desa.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\user\v_user_deskripsi_desa.php(22): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_user_deskripsi_desa.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\User\ProfileDesa.php(63): view()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:21:24 --> Invalid file: admin/v_user_dashboard_sosmed.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Admin\Sosmed.php(63): view()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Sosmed->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:21:42 --> Invalid file: admin/v_admin_dashboard_sosmed.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Admin\Sosmed.php(63): view()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Sosmed->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:24:51 --> Undefined index: edit_sosmed
+in APPPATH\Views\admin\v_dashboard_admin_sosmed.php on line 29.
+ 1 APPPATH\Views\admin\v_dashboard_admin_sosmed.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard_admin_sosmed.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin\Sosmed.php(63): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Sosmed->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:25:20 --> Call to undefined method App\Models\SosmedModel::getSingleKategori
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Admin\Sosmed.php(22): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Sosmed->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:40:11 --> syntax error, unexpected '}'
+in APPPATH\Controllers\Admin\Sosmed.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH\CodeIgniter.php(857): class_exists()
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:40:20 --> Can't use method return value in write context
+in APPPATH\Controllers\Admin\Sosmed.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-14 11:45:09 --> Undefined variable: sosmed
+in APPPATH\Views\admin\v_dashboard_admin_sosmed.php on line 22.
+ 1 APPPATH\Views\admin\v_dashboard_admin_sosmed.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard_admin_sosmed.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin\Sosmed.php(64): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Sosmed->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:45:21 --> Undefined variable: sosmed
+in APPPATH\Views\admin\v_dashboard_admin_sosmed.php on line 22.
+ 1 APPPATH\Views\admin\v_dashboard_admin_sosmed.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard_admin_sosmed.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin\Sosmed.php(64): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Sosmed->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:45:47 --> Undefined variable: sosmed_to_edit
+in APPPATH\Views\admin\v_dashboard_admin_sosmed.php on line 31.
+ 1 APPPATH\Views\admin\v_dashboard_admin_sosmed.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard_admin_sosmed.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin\Sosmed.php(65): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Sosmed->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:46:04 --> Undefined variable: sosmed_to_edit
+in APPPATH\Views\admin\v_dashboard_admin_sosmed.php on line 31.
+ 1 APPPATH\Views\admin\v_dashboard_admin_sosmed.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard_admin_sosmed.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin\Sosmed.php(66): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Sosmed->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:50:53 --> Undefined variable: sosmed
+in APPPATH\Views\user\template\v_user_template_sosmed.php on line 3.
+ 1 APPPATH\Views\user\template\v_user_template_sosmed.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\user\v_user_aparatur.php(34): include('APPPATH\\Views\\user\\template\\v_user_template_sosmed.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_user_aparatur.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\User\Aparatur.php(31): view()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Aparatur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:52:02 --> Undefined variable: link_whatsapp
+in APPPATH\Views\user\template\v_user_template_sosmed.php on line 31.
+ 1 APPPATH\Views\user\template\v_user_template_sosmed.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\user\v_user_aparatur.php(34): include('APPPATH\\Views\\user\\template\\v_user_template_sosmed.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_user_aparatur.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\User\Aparatur.php(31): view()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Aparatur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:52:10 --> Undefined variable: link_wa
+in APPPATH\Views\user\template\v_user_template_sosmed.php on line 31.
+ 1 APPPATH\Views\user\template\v_user_template_sosmed.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\user\v_user_aparatur.php(34): include('APPPATH\\Views\\user\\template\\v_user_template_sosmed.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_user_aparatur.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\User\Aparatur.php(31): view()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Aparatur->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:54:01 --> Undefined variable: link_facebook
+in APPPATH\Views\user\template\v_user_template_sosmed.php on line 3.
+ 1 APPPATH\Views\user\template\v_user_template_sosmed.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\user\v_user_deskripsi_desa.php(23): include('APPPATH\\Views\\user\\template\\v_user_template_sosmed.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_user_deskripsi_desa.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\User\ProfileDesa.php(67): view()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 11:54:14 --> Undefined property: App\Controllers\User\ProfileDesa::$m_sosmed
+in APPPATH\Controllers\User\ProfileDesa.php on line 72.
+ 1 APPPATH\Controllers\User\ProfileDesa.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\ProfileDesa->Deskripsi_Desa()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 12:40:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Aparatur.php on line 28.
+ 1 APPPATH\Controllers\Admin\Aparatur.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 12:45:39 --> Undefined variable: rules
+in APPPATH\Controllers\Admin\ProfileDesa.php on line 161.
+ 1 APPPATH\Controllers\Admin\ProfileDesa.php(161): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\ProfileDesa->heroImage()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 12:54:30 --> Undefined variable: action
+in APPPATH\Controllers\Admin\Aparatur.php on line 34.
+ 1 APPPATH\Controllers\Admin\Aparatur.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 13:07:56 --> Undefined index: id_aparatur
+in APPPATH\Views\admin\v_dashboard_admin_galeri.php on line 43.
+ 1 APPPATH\Views\admin\v_dashboard_admin_galeri.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard_admin_galeri.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin\Galeri.php(48): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Galeri->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 13:10:49 --> Undefined property: App\Controllers\Admin\Galeri::$m_aparatur
+in APPPATH\Controllers\Admin\Galeri.php on line 30.
+ 1 APPPATH\Controllers\Admin\Galeri.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Galeri->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 13:12:12 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Galeri.php on line 30.
+ 1 APPPATH\Controllers\Admin\Galeri.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Galeri->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 13:13:17 --> Call to undefined method App\Models\GaleriModel::deleteGaleri
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Admin\Galeri.php(32): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Galeri->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-14 13:13:48 --> Call to undefined method App\Models\GaleriModel::deleteGaleri
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Admin\Galeri.php(32): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Galeri->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

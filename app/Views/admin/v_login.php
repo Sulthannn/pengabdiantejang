@@ -42,7 +42,7 @@ $session = \Config\Services::session();
                                     </div>
                                     <?php endif ?>
                                     <div class="card-body">
-                                        <form action="" method="POST">
+                                        <form action="<?= site_url('admin/login')?>" method="POST">
                                             <div class="form-floating mb-3">
                                                 <input required name="username" class="form-control" id="inputUsername" type="text" placeholder="username"  />
                                                 <label for="inputUsername">Username</label>

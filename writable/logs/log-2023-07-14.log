@@ -1,0 +1,120 @@
+CRITICAL - 2023-07-14 01:32:54 --> Call to undefined function change_date_to_indonesian()
+in APPPATH\Views\admin\v_dashboard_admin_posts.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\Admin\Post.php(26): view()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Post->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 01:56:49 --> Class 'HTMLPurifier_Config' not found
+in APPPATH\Helpers\fungsi_helper.php on line 27.
+ 1 APPPATH\Models\PostsModel.php(36): purify_html()
+ 2 APPPATH\Controllers\Admin\Post.php(84): App\Models\PostsModel->insertPost()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Post->tambahPost()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 01:59:50 --> main(): Failed opening required 'vendor/htmlpurifier/library/HTMLPurifier.auto.php' (include_path='.;C:\php\pear')
+in APPPATH\Helpers\fungsi_helper.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-14 02:00:19 --> main(): Failed opening required '/vendor/htmlpurifier/library/HTMLPurifier.auto.php' (include_path='.;C:\php\pear')
+in APPPATH\Helpers\fungsi_helper.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-14 02:19:26 --> Too few arguments to function App\Controllers\Admin\Post::editPost(), 0 passed in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php on line 907 and exactly 1 expected
+in APPPATH\Controllers\Admin\Post.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Post->editPost()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 02:27:01 --> Undefined property: App\Controllers\Admin\Post::$m_posts
+in APPPATH\Controllers\Admin\Post.php on line 110.
+ 1 APPPATH\Controllers\Admin\Post.php(110): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Post->editPost()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 11:25:18 --> syntax error, unexpected '}', expecting ';'
+in APPPATH\Controllers\Admin\Post.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH\CodeIgniter.php(857): class_exists()
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 11:32:17 --> Invalid argument supplied for foreach()
+in APPPATH\Views\admin\v_dashboard_admin_posts.php on line 24.
+ 1 APPPATH\Views\admin\v_dashboard_admin_posts.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard_admin_posts.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin\Post.php(42): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Post->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 11:34:48 --> Invalid argument supplied for foreach()
+in APPPATH\Views\admin\v_dashboard_admin_posts.php on line 24.
+ 1 APPPATH\Views\admin\v_dashboard_admin_posts.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard_admin_posts.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin\Post.php(42): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Post->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 11:39:25 --> Invalid argument supplied for foreach()
+in APPPATH\Views\admin\v_dashboard_admin_posts.php on line 24.
+ 1 APPPATH\Views\admin\v_dashboard_admin_posts.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard_admin_posts.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin\Post.php(42): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Post->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 12:17:05 --> Call to undefined function App\Controllers\Admin\str_contains()
+in APPPATH\Controllers\Admin\Post.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Post->tambahPost()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 12:35:51 --> file_get_contents(blob:http://localhost:8080/bc468ad8-afcb-4590-8461-20c7c4eabdb7): failed to open stream: No such file or directory
+in APPPATH\Controllers\Admin\Post.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\Admin\Post.php(115): file_get_contents()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Post->tambahPost()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 12:43:33 --> Call to a member function download() on null
+in APPPATH\Controllers\Admin\Post.php on line 119.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Post->tambahPost()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 12:46:01 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 154.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-14 12:47:30 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 154.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-14 13:03:17 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 154.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

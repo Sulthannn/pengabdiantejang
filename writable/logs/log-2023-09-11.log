@@ -1,0 +1,511 @@
+ERROR - 2023-09-11 00:13:32 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\PostsModel.php(124): CodeIgniter\BaseModel->paginate()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\Berita.php(22): App\Models\PostsModel->beritaBuatUser()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\Berita->index()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\PostsModel.php(124): CodeIgniter\BaseModel->paginate()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\Berita.php(22): App\Models\PostsModel->beritaBuatUser()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\Berita->index()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-11 00:13:32 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults()
+ 5 APPPATH\Models\PostsModel.php(124): CodeIgniter\BaseModel->paginate()
+ 6 APPPATH\Controllers\User\Berita.php(22): App\Models\PostsModel->beritaBuatUser()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Berita->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-09-11 00:13:36 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\PostsModel.php(148): CodeIgniter\Model->__call()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\Berita.php(36): App\Models\PostsModel->checkBeritaBySlug()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\Berita->detailBerita()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\PostsModel.php(148): CodeIgniter\Model->__call()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\Berita.php(36): App\Models\PostsModel->checkBeritaBySlug()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\Berita->detailBerita()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-11 00:13:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\PostsModel.php(148): CodeIgniter\Model->__call()
+ 5 APPPATH\Controllers\User\Berita.php(36): App\Models\PostsModel->checkBeritaBySlug()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Berita->detailBerita()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 00:14:28 --> Too few arguments to function App\Controllers\User\Berita::detailBerita(), 0 passed in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php on line 907 and exactly 1 expected
+in APPPATH\Controllers\User\Berita.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Berita->detailBerita()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-09-11 00:38:24 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\PostsModel.php(124): CodeIgniter\BaseModel->paginate()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\Berita.php(22): App\Models\PostsModel->beritaBuatUser()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\Berita->index()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\PostsModel.php(124): CodeIgniter\BaseModel->paginate()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\Berita.php(22): App\Models\PostsModel->beritaBuatUser()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\Berita->index()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-11 00:38:24 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults()
+ 5 APPPATH\Models\PostsModel.php(124): CodeIgniter\BaseModel->paginate()
+ 6 APPPATH\Controllers\User\Berita.php(22): App\Models\PostsModel->beritaBuatUser()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Berita->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-09-11 00:38:28 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\PostsModel.php(124): CodeIgniter\BaseModel->paginate()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\Berita.php(22): App\Models\PostsModel->beritaBuatUser()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\Berita->index()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\PostsModel.php(124): CodeIgniter\BaseModel->paginate()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\Berita.php(22): App\Models\PostsModel->beritaBuatUser()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\Berita->index()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-11 00:38:28 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults()
+ 5 APPPATH\Models\PostsModel.php(124): CodeIgniter\BaseModel->paginate()
+ 6 APPPATH\Controllers\User\Berita.php(22): App\Models\PostsModel->beritaBuatUser()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Berita->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-09-11 00:39:04 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\PostsModel.php(138): CodeIgniter\Model->__call()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\Berita.php(36): App\Models\PostsModel->getBeritaBySlug()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\Berita->detailBerita()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\PostsModel.php(138): CodeIgniter\Model->__call()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\User\Berita.php(36): App\Models\PostsModel->getBeritaBySlug()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\User\Berita->detailBerita()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-11 00:39:04 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\PostsModel.php(138): CodeIgniter\Model->__call()
+ 5 APPPATH\Controllers\User\Berita.php(36): App\Models\PostsModel->getBeritaBySlug()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User\Berita->detailBerita()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 05:44:32 --> Undefined variable: agenda
+in APPPATH\Views\admin\v_dashboard_admin_agenda.php on line 44.
+ 1 APPPATH\Views\admin\v_dashboard_admin_agenda.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard_admin_agenda.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin\Agenda.php(21): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Agenda->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 06:52:15 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_dashboard_admin_detail_pengaduan.php on line 17.
+ 1 APPPATH\Views\admin\v_dashboard_admin_detail_pengaduan.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard_admin_detail_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin\Pengaduan.php(136): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Pengaduan->detail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 06:56:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_dashboard_admin_detail_pengaduan.php on line 17.
+ 1 APPPATH\Views\admin\v_dashboard_admin_detail_pengaduan.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard_admin_detail_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin\Pengaduan.php(136): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Pengaduan->detail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 06:58:06 --> Call to a member function getName() on null
+in APPPATH\Controllers\Admin\ProfileDesa.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\ProfileDesa->heroImage()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 07:01:38 --> Call to a member function getName() on null
+in APPPATH\Controllers\Admin\ProfileDesa.php on line 164.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\ProfileDesa->heroImage()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 07:03:42 --> Call to a member function getName() on null
+in APPPATH\Controllers\Admin\ProfileDesa.php on line 164.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\ProfileDesa->heroImage()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 07:06:59 --> Undefined variable: rules
+in APPPATH\Controllers\Admin\ProfileDesa.php on line 161.
+ 1 APPPATH\Controllers\Admin\ProfileDesa.php(161): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\ProfileDesa->heroImage()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 07:08:24 --> Function name must be a string
+in APPPATH\Controllers\Admin\ProfileDesa.php on line 161.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\ProfileDesa->heroImage()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 08:39:20 --> Undefined index: image
+in APPPATH\Controllers\Admin\ProfileDesa.php on line 167.
+ 1 APPPATH\Controllers\Admin\ProfileDesa.php(167): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\ProfileDesa->heroImage()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 08:43:53 --> syntax error, unexpected ';', expecting ']'
+in APPPATH\Controllers\Admin\ProfileDesa.php on line 153.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH\CodeIgniter.php(857): class_exists()
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 08:44:08 --> Illegal string offset 'image'
+in APPPATH\Controllers\Admin\ProfileDesa.php on line 166.
+ 1 APPPATH\Controllers\Admin\ProfileDesa.php(166): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\ProfileDesa->heroImage()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 09:27:55 --> Undefined variable: image
+in APPPATH\Controllers\Admin\ProfileDesa.php on line 175.
+ 1 APPPATH\Controllers\Admin\ProfileDesa.php(175): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\ProfileDesa->heroImage()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 09:28:20 --> Undefined variable: image
+in APPPATH\Controllers\Admin\ProfileDesa.php on line 175.
+ 1 APPPATH\Controllers\Admin\ProfileDesa.php(175): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\ProfileDesa->heroImage()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 10:00:22 --> Undefined variable: rules
+in APPPATH\Controllers\Admin\Aparatur.php on line 39.
+ 1 APPPATH\Controllers\Admin\Aparatur.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->addAparatur()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-09-11 10:01:01 --> mysqli_sql_exception: Column 'gambar_aparatur' cannot be null in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\AparaturDesaModel.php(26): CodeIgniter\BaseModel->save()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\Admin\Aparatur.php(66): App\Models\AparaturDesaModel->insertData()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->addAparatur()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#12 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#13 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-11 10:01:01 --> Column 'gambar_aparatur' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert()
+ 9 APPPATH\Models\AparaturDesaModel.php(26): CodeIgniter\BaseModel->save()
+10 APPPATH\Controllers\Admin\Aparatur.php(66): App\Models\AparaturDesaModel->insertData()
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->addAparatur()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-09-11 10:07:25 --> mysqli_sql_exception: Column 'gambar_aparatur' cannot be null in C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query()
+#1 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert()
+#7 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert()
+#8 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Models\AparaturDesaModel.php(26): CodeIgniter\BaseModel->save()
+#9 C:\xampp\htdocs\Web Pengabdian\websitedesa\app\Controllers\Admin\Aparatur.php(64): App\Models\AparaturDesaModel->insertData()
+#10 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->addAparatur()
+#11 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#12 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#13 C:\xampp\htdocs\Web Pengabdian\websitedesa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\Web Pengabdian\websitedesa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-09-11 10:07:25 --> Column 'gambar_aparatur' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert()
+ 9 APPPATH\Models\AparaturDesaModel.php(26): CodeIgniter\BaseModel->save()
+10 APPPATH\Controllers\Admin\Aparatur.php(64): App\Models\AparaturDesaModel->insertData()
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->addAparatur()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 10:07:54 --> Invalid file: admin/v_dashboard_admin_aparatur.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Admin\Aparatur.php(24): view()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 10:08:23 --> Invalid file: admin/v_dashboard_admin_aparatur.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Admin\Aparatur.php(24): view()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 10:10:22 --> Invalid file: admin/v_dashboard_admin_aparatur.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Admin\Aparatur.php(24): view()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 10:11:13 --> Invalid file: admin/v_dashboard_admin_aparatur.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Admin\Aparatur.php(24): view()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 10:11:15 --> Invalid file: admin/v_dashboard_admin_aparatur.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Admin\Aparatur.php(24): view()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 10:11:18 --> Invalid file: admin/v_dashboard_admin_aparatur.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Admin\Aparatur.php(24): view()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-11 10:12:49 --> Undefined variable: record
+in APPPATH\Views\admin\v_dashboard_admin_aparatur.php on line 44.
+ 1 APPPATH\Views\admin\v_dashboard_admin_aparatur.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_dashboard_admin_aparatur.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Admin\Aparatur.php(24): view()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin\Aparatur->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
